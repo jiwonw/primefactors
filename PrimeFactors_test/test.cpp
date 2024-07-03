@@ -29,3 +29,13 @@ TEST(PrimeFactors, Of6) {
 	vector<int> expected = { 2, 3 };
 	EXPECT_EQ(expected, prime_factor.of(6));
 }
+TEST(PrimeFactors, Of9) {
+	PrimeFactor prime_factor;
+	vector<int> expected = { 3, 3 };
+	EXPECT_EQ(expected, prime_factor.of(9));
+}
+TEST(PrimeFactors, Of12) {
+	PrimeFactor prime_factor;
+	vector<int> expected = { 2, 2, 3 };
+	EXPECT_EQ(expected, prime_factor.of(12));
+}
